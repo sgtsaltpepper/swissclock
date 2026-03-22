@@ -1,0 +1,8 @@
+build/
+dist/
+.DS_Store
+*.xcworkspace/xcuserdata
+*.xcodeproj/xcuserdata
+*.xcodeproj/project.xcworkspace/xcuserdata
+.claude/
+org.llvm.clang/
