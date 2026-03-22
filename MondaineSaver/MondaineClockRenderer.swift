@@ -79,7 +79,7 @@ struct MondaineClockRenderer {
         if let gradient = CGGradient(colorsSpace: CGColorSpaceCreateDeviceRGB(), colors: colors, locations: locations) {
             let start = CGPoint(x: center.x - radius * 0.3, y: center.y + radius * 0.8)
             let end = CGPoint(x: center.x + radius * 0.5, y: center.y - radius * 0.5)
-            context.drawLinearGradient(gradient, start: start, end: end, options: [])
+            context.drawLinearGradient(gradient, start: start, end: end, options: [.drawsBeforeStartLocation, .drawsAfterEndLocation])
         }
         context.restoreGState()
     }
